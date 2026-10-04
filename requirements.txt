@@ -1,14 +1,39 @@
+# ============================================================
+#  EcoGuard — Forest Threat Sound Detection
+#  Streamlit App Requirements
+# ============================================================
+
+# --- Core UI ---
 streamlit>=1.39
+
+# --- Audio processing ---
 librosa>=0.10
 soundfile
+
+# --- Numerical / data ---
 numpy
 pandas
+
+# --- Visualisation ---
 plotly
 matplotlib
+
+# --- Model serialisation ---
 joblib
+
+# --- Classical ML ---
 scikit-learn==1.6.1
 lightgbm==4.6.0
 xgboost==3.2.0
 catboost==1.2.10
-# optional, only for the Deep Learning tab:
-# tensorflow  (or torch)
+
+# --- Deep learning (optional — only for the CRNN tab) ---
+# Install ONE of the following to enable the CRNN (CNN + BiGRU) model.
+# CPU-only builds are fine for inference; the app falls back gracefully
+# when neither is present and shows a clear install hint in the UI.
+#
+# PyTorch (recommended):
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+#
+# Or uncomment the line below for a minimal CPU torch from PyPI:
+# torch
