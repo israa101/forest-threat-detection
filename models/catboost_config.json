@@ -1,0 +1,28 @@
+{
+  "model_name": "catboost",
+  "owner": "Developer B \u2014 Eng. Jomanah",
+  "best_params": {
+    "depth": 8,
+    "learning_rate": 0.03,
+    "l2_leaf_reg": 10,
+    "iterations": 1146
+  },
+  "val_macro_f1": 0.8298,
+  "class_names": [
+    "natural",
+    "rain_thunder",
+    "gunshot",
+    "fire",
+    "chainsaw_engine",
+    "human_voice",
+    "unknown"
+  ],
+  "train_folds": "2-9",
+  "val_fold": 1,
+  "sample_rate": 16000,
+  "window_samples": 48000,
+  "catboost_version": "1.2.10",
+  "sklearn_version": "1.6.1",
+  "created": "2026-10-04T01:19:52",
+  "api": "model.predict(X) / model.predict_proba(X)"
+}

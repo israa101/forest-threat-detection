@@ -1,0 +1,40 @@
+{
+  "model_name": "lightgbm",
+  "owner": "Developer A",
+  "best_params": {
+    "clf__colsample_bytree": 0.5233328316068078,
+    "clf__learning_rate": 0.18487795918982847,
+    "clf__max_depth": 10,
+    "clf__min_child_samples": 48,
+    "clf__n_estimators": 500,
+    "clf__num_leaves": 78,
+    "clf__reg_alpha": 0.07362945281639216,
+    "clf__reg_lambda": 2.752717392942941,
+    "clf__subsample": 0.8721230154351118
+  },
+  "cv": "GroupKFold(n_splits=3) on group_id, train folds [2, 3, 4, 5, 6, 7, 8, 9]",
+  "cv_macro_f1": 0.8546,
+  "val_fold": 1,
+  "val_macro_f1": 0.867,
+  "class_names": [
+    "chainsaw_engine",
+    "fire",
+    "gunshot",
+    "human_voice",
+    "natural",
+    "rain_thunder",
+    "unknown"
+  ],
+  "n_features": 292,
+  "sample_rate": 16000,
+  "window_samples": 48000,
+  "class_weight": "balanced",
+  "seed": 42,
+  "versions": {
+    "sklearn": "1.6.1",
+    "lightgbm": "4.6.0"
+  },
+  "created": "2026-10-03T22:04:56",
+  "api": "predict(window: np.ndarray[48000]) -> dict[class, prob]",
+  "requires": "forest_model_api.py on PYTHONPATH when loading"
+}
