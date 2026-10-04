@@ -1,0 +1,14 @@
+streamlit>=1.39
+librosa>=0.10
+soundfile
+numpy
+pandas
+plotly
+matplotlib
+joblib
+scikit-learn==1.6.1
+lightgbm==4.6.0
+xgboost==3.2.0
+catboost==1.2.10
+# optional, only for the Deep Learning tab:
+# tensorflow  (or torch)
