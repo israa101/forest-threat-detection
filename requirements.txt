@@ -36,4 +36,4 @@ catboost==1.2.10
 #   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 #
 # Or uncomment the line below for a minimal CPU torch from PyPI:
-# torch
+torch
