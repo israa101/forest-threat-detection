@@ -1,0 +1,33 @@
+{
+  "model_name": "xgboost",
+  "owner": "Developer B \u2014 Eng. Jomanah",
+  "best_params": {
+    "max_depth": 8,
+    "learning_rate": 0.07328091899712079,
+    "min_child_weight": 10,
+    "subsample": 0.882066151450534,
+    "colsample_bytree": 0.8684374186131807,
+    "reg_lambda": 1.1375721863121129,
+    "reg_alpha": 0.04704330443315486,
+    "gamma": 0.0,
+    "n_estimators": 958
+  },
+  "val_macro_f1": 0.8769,
+  "class_names": [
+    "natural",
+    "rain_thunder",
+    "gunshot",
+    "fire",
+    "chainsaw_engine",
+    "human_voice",
+    "unknown"
+  ],
+  "train_folds": "2-9",
+  "val_fold": 1,
+  "sample_rate": 16000,
+  "window_samples": 48000,
+  "xgboost_version": "3.2.0",
+  "sklearn_version": "1.6.1",
+  "created": "2026-10-04T01:19:51",
+  "api": "model.predict(X) / model.predict_proba(X)"
+}

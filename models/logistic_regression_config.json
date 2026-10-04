@@ -1,0 +1,32 @@
+{
+  "model_name": "logistic_regression",
+  "owner": "Developer A",
+  "best_params": {
+    "clf__C": 0.1
+  },
+  "cv": "GroupKFold(n_splits=3) on group_id, train folds [2, 3, 4, 5, 6, 7, 8, 9]",
+  "cv_macro_f1": 0.744,
+  "val_fold": 1,
+  "val_macro_f1": 0.7482,
+  "class_names": [
+    "chainsaw_engine",
+    "fire",
+    "gunshot",
+    "human_voice",
+    "natural",
+    "rain_thunder",
+    "unknown"
+  ],
+  "n_features": 292,
+  "sample_rate": 16000,
+  "window_samples": 48000,
+  "class_weight": "balanced",
+  "seed": 42,
+  "versions": {
+    "sklearn": "1.6.1",
+    "lightgbm": "4.6.0"
+  },
+  "created": "2026-10-03T22:04:54",
+  "api": "predict(window: np.ndarray[48000]) -> dict[class, prob]",
+  "requires": "forest_model_api.py on PYTHONPATH when loading"
+}

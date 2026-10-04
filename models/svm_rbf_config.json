@@ -1,0 +1,25 @@
+{
+  "model_name": "svm_rbf",
+  "owner": "Developer B \u2014 Eng. Jomanah",
+  "kernel": "rbf",
+  "C": 10,
+  "gamma": "scale",
+  "class_weight": "balanced",
+  "val_macro_f1": 0.8632,
+  "class_names": [
+    "natural",
+    "rain_thunder",
+    "gunshot",
+    "fire",
+    "chainsaw_engine",
+    "human_voice",
+    "unknown"
+  ],
+  "train_folds": "2-9",
+  "val_fold": 1,
+  "sample_rate": 16000,
+  "window_samples": 48000,
+  "sklearn_version": "1.6.1",
+  "created": "2026-10-04T01:19:51",
+  "api": "pipeline.predict(X) / pipeline.predict_proba(X)"
+}
